@@ -1,0 +1,84 @@
+Metaprogramming and Reflection
+1. Using send
+2. Using define_method
+3. Using method_missing
+
+Reflection/introspection -> ability for a program to examine itself
+#methods
+#send(:method_name) -> to call 
+macro -> class method that will define more methods
+define_method(name) {} will define a method with that name, scope being the code
+Famous macros: attrs, belongs_to / has_many
+
+If a method is called and no method exists, #method_missing is called. 
+Passes method name as symbol and all arguments to method_missing
+
+Dynamic finders -> feature of rails till' 5, where they are no longer 
+supported due to verbose code and being not performant.
+
+#class, #is_a? Type, etc.
+
+Class instance variables and methods are the same as instance ones, just called 
+on a class instead of an instance of a class.
+
+@@ to declare a class variable are like class instance variables, but they're 
+shared between super-class and subclass.
+
+$ for global variabls -> accessible anywhere
+
+Flexbox
+1. flex-parent, flex-child. Setting display: flex; doesn't go more than 1 level deep
+2. justify-content vs align-items
+3. flex-wrap: wrap; to wrap around
+flex: 1 100% -> shorthand for... how does flex basis work?
+media queries -> deal with different screen sizes
+order for where to put flexbox elements
+May need to rewatch Flexbox vid -> was quite confusing
+
+Flexbox Froggy
+justify-content -> aligns items horizontally and accepts 
+flex-start -> left of container
+flex-end  -> right of container
+center -> center of container
+space-between -> equal spacing between 
+space-around -> equal spacing around
+
+align-items -> align items vertically and accepts 
+flex-start -> at top
+flex-end -> at bottom
+center  -> at vertical center
+baseline  -> at baseline
+stretch -> stretch to fit container
+
+flex-direction defines direction and accepts 
+row -> left to right
+row-reverse -> right to left 
+column -> top to bottom
+column-reverse -> bottom to top
+
+flex-direction is default row, if you switch to col, align-items and justify-content 
+switches usage
+flex-end and flex-start change when you use flex-direction reverse
+
+Using order to change item order in container! Default of 0, but can set 
+to a pos or neg number.
+
+align-self is like align-items but for an individual
+
+flex-wrap -> accepts 
+wrap  -> wrap around to additional lines
+nowrap -> every item fit to single line
+wrap-reverse -> wrap around to additional lines in reverse
+
+flex-flow combines flex-direction and flex-wrap
+
+align-content -> sets how multiple lines are spaced apart from each other, accepts
+flex-start 
+flex-end 
+center 
+space-between 
+space-around 
+stretch 
+
+This determines spacing between lines, while align-items determines how the 
+items as a whole are aligned within the container.
