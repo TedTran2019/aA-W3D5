@@ -141,3 +141,8 @@ Ugh, wasted a lot of time because accidentally used .each instead of
 .map and couldn't find the error...
 
 Remember implicit self depending on whether it's the class or instance of one...
+
+Understand how belongs_to and has_many work in Rails 
+Be able to metaprogram new methods 
+Be able to write association methods that use joins (has_many_through)
+Know when to write code in a module vs new class
