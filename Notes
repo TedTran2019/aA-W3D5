@@ -146,3 +146,8 @@ Understand how belongs_to and has_many work in Rails
 Be able to metaprogram new methods 
 Be able to write association methods that use joins (has_many_through)
 Know when to write code in a module vs new class
+
+extend Module -> puts it as class methods
+define_method -> Used on a class to define methods at the instance level
+When coding, having diagram or everything planned/built before you start 
+makes things a lot easier. Do the thinking first, code after.
