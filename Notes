@@ -82,3 +82,62 @@ stretch
 
 This determines spacing between lines, while align-items determines how the 
 items as a whole are aligned within the container.
+-----------------------------------------
+
+Huh, you can use grep and such in Ruby. 
+Learning grep and regex would be nice... 
+
+1. know when to use class and when to use instance methods
+2. know how to use define_method inside a class to add instance methods 
+3. be able to create a generic SQLobject class that abstracts table logic away
+4. understand how ActiveRecord interfaces with the database 
+5. be able to write generic query methods that any class inheriting from SQLObject 
+can use 
+
+---------------------------------------
+
+Cleaning up and fixing issues!
+Ruby 
+1. which gem -> to make sure you have RubyGems 
+2. gem update --system to get latest version of RubyGems
+3. gem install gem_name to get gem 
+4. gem list -> See all gems
+5. gem outdated -> see all outdated gems 
+6. gem update -> update all gems
+7. gem cleanup -> remove old versions of gems
+
+To fix fileutils conflict 
+1. gem uninstall fileutils 
+2. gem update fileutils --default
+3. Can gem list | grep fileutils to see more info
+
+NPM 
+1. npm cache verify -> Testing to see if cache data is valid
+2. npm -v to check npm version 
+3. npm install -g npm@latest to install latest stable version
+4. npm install -g npm-check-updates
+5. ncu -u
+6. npm update or npm install
+
+Upgrading rbenv 
+1. cd ~/.rbenv -> git pull 
+2. cd ~/.rbenv/plugins/ruby-build -> git pull
+3. Install latest version of Ruby! rbenv install -l 
+4. rbenv install <pick version>
+5. rbenv global <pick version> to choose Ruby ver.
+6. gem install bundler -> Install rest of gems needed
+
+Issue with gem "annotate" is due to the new 3.0.0 version!
+
+Usage of instance_variable_get and instance_variable_set for attr_accessors! 
+Otherwise, you can't access them due to scoping issues. 
+
+execute vs execute2
+execute2 method returns an array
+Cannot interpolate into FROM with ?, have to use #{} for both
+
+To run a specific line for testing on RSPEC, add :line_number
+Ugh, wasted a lot of time because accidentally used .each instead of 
+.map and couldn't find the error...
+
+Remember implicit self depending on whether it's the class or instance of one...
